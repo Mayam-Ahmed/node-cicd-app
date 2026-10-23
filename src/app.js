@@ -1,4 +1,6 @@
 const message = 'Hello from Jenkins CI/CD version 2';
+const student = 'Mayam Ahmed FA23-BSE-008';
+const course = 'CSC418 DevOps Lab 7 - CI/CD with Jenkins';
 
 function renderPage(build = 'local') {
   return `<!doctype html>
@@ -14,7 +16,8 @@ padding:48px;border-radius:16px}h1{font-size:36px}p{font-size:20px}
 </style>
 <main><p class="label">CSC418 DEVOPS LAB</p>
 <h1>${message}</h1><p>A Node.js app delivered by Jenkins.</p>
+<p>${course}</p><p>Student: <strong>${student}</strong></p>
 <p>Build: <strong>${build}</strong></p></main></html>`;
 }
 
-module.exports = { message, renderPage };
+module.exports = { message, student, course, renderPage };
